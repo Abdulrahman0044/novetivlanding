@@ -1,15 +1,18 @@
-import { Button } from "@/components/ui/button";
-
 export default function Cta() {
   return (
-    <section className="py-16 bg-dark-surface">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto rounded-2xl bg-gradient-to-r from-primary to-blue-500 p-8 md:p-12 text-center shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Boost Your Social Presence — Faster and Smarter with Novetiv</h2>
-          <p className="text-lg mb-8 opacity-90">Join thousands of brands already leveraging AI to grow their online engagement</p>
-          <Button className="bg-white hover:bg-gray-100 text-primary px-8 py-6 h-auto rounded-full font-medium transition-colors shadow-md">
+    <section className="py-16 section-dark">
+      <div className="container-custom">
+        <div className="max-w-4xl mx-auto rounded-lg bg-[#7c3aed] p-6 md:p-8 text-center">
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">Boost Your Social Presence — Faster and Smarter with Novetiv</h2>
+          <p className="text-white text-sm mb-6 opacity-90">Join thousands of brands already leveraging AI to grow their online engagement</p>
+          <a 
+            href="https://play.google.com/store"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white hover:bg-gray-100 text-[#7c3aed] px-6 py-2 inline-block rounded-md font-medium text-sm transition-colors"
+          >
             Try Novetiv For Free
-          </Button>
+          </a>
         </div>
       </div>
     </section>
