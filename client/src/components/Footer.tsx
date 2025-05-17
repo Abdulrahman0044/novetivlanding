@@ -1,43 +1,41 @@
-import { Input } from "@/components/ui/input";
-
 export default function Footer() {
-  const socialLinks = [
-    { icon: "fab fa-twitter", href: "#" },
-    { icon: "fab fa-facebook", href: "#" },
-    { icon: "fab fa-instagram", href: "#" },
-    { icon: "fab fa-linkedin", href: "#" }
-  ];
-
   const footerColumns = [
     {
-      title: "Platform",
-      links: ["Overview", "Features", "API", "Resources"]
+      title: "Features",
+      links: ["AI & Automation", "Premium Analytics", "Analysis", "Interaction", "Publishing", "Promotion", "Influence - Marketing"]
     },
     {
-      title: "Company",
-      links: ["About", "Contact", "Careers", "Blog"]
+      title: "Integration",
+      links: ["Facebook", "Instagram", "Twitter (X)", "LinkedIn", "Playstore", "Appstore"]
     },
     {
       title: "Support",
-      links: ["Help Center", "Documentation", "Status", "Community"]
+      links: ["Help Center", "FAQs", "System Status"]
     }
   ];
 
   return (
-    <footer className="pt-12 pb-4 section-darker">
+    <footer className="pt-12 pb-4 section-darker" id="about">
       <div className="container-custom">
-        <div className="mb-8">
-          <div className="text-xl font-bold text-white mb-2">Novetiv</div>
-          <div className="flex space-x-3 mb-4">
-            {socialLinks.map((link, index) => (
-              <a key={index} href={link.href} className="text-gray-400 hover:text-blue-highlight transition-colors text-lg">
-                <i className={link.icon}></i>
-              </a>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-10">
+          <div className="md:col-span-2">
+            <div className="text-xl font-bold text-white mb-4">Novetiv</div>
+            <div className="mb-6">
+              <h4 className="text-white text-sm font-medium mb-2">Contact Us</h4>
+              <div className="flex space-x-3 mt-2">
+                <a href="#" className="text-gray-400 hover:text-blue-highlight transition-colors">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-blue-highlight transition-colors">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-blue-highlight transition-colors">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+          
           {footerColumns.map((column, idx) => (
             <div key={idx}>
               <h4 className="text-white text-sm font-medium mb-4">{column.title}</h4>
@@ -48,24 +46,17 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+              {column.title === "Features" && (
+                <a href="#" className="text-blue-highlight hover:text-blue-500 text-xs block mt-3">
+                  See all
+                </a>
+              )}
             </div>
           ))}
-          
-          <div>
-            <h4 className="text-white text-sm font-medium mb-4">Contact Us</h4>
-            <p className="text-gray-400 text-xs mb-2">novetivai@gmail.com</p>
-            <p className="text-gray-400 text-xs">+2349068029427</p>
-          </div>
         </div>
         
-        <div className="border-t border-[#1e3055] pt-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-xs mb-2 md:mb-0">© 2023 Novetiv. All rights reserved.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-blue-highlight transition-colors text-xs">Privacy Policy</a>
-              <a href="#" className="text-gray-500 hover:text-blue-highlight transition-colors text-xs">Terms of Service</a>
-            </div>
-          </div>
+        <div className="border-t border-[#1e3055] pt-4 text-right">
+          <p className="text-gray-500 text-xs">© PromptTo 2025</p>
         </div>
       </div>
     </footer>

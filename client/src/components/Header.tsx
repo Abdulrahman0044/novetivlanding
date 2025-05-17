@@ -13,9 +13,9 @@ export default function Header() {
   const navigationLinks = [
     { label: "Home", href: "#" },
     { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "About Us", href: "#about" },
-    { label: "More", href: "#more" },
+    { label: "Integration", href: "#integration" },
+    { label: "Reviews", href: "#reviews" },
+    { label: "About us", href: "#about" },
   ];
 
   return (
@@ -45,9 +45,9 @@ export default function Header() {
             href="https://play.google.com/store"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-block btn-primary text-sm font-medium"
+            className="hidden md:inline-block btn-primary text-sm font-medium rounded-full"
           >
-            Try Novetiv for Free
+            Try Novetiv for free
           </a>
 
           {/* Mobile Menu Button */}
@@ -73,10 +73,10 @@ export default function Header() {
                   href="https://play.google.com/store"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary text-center text-sm"
+                  className="btn-primary text-center text-sm rounded-full"
                   onClick={() => setIsOpen(false)}
                 >
-                  Try Novetiv for Free
+                  Try Novetiv for free
                 </a>
               </nav>
             </SheetContent>
