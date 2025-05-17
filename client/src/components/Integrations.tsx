@@ -19,7 +19,7 @@ export default function Integrations() {
       description: "Share professional content"
     },
     {
-      name: "Twitter (X)",
+      name: "Twitter",
       icon: "fab fa-twitter",
       color: "text-gray-400",
       description: "Monitor mentions and tweets"
@@ -27,7 +27,7 @@ export default function Integrations() {
   ];
 
   return (
-    <section className="py-16 section-dark">
+    <section className="py-12 section-dark">
       <div className="container-custom">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-3 text-white">Integrations across leading platforms</h2>
@@ -36,6 +36,7 @@ export default function Integrations() {
           </p>
         </div>
         
+        {/* Social platform grid - exactly as shown in the screenshot */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {platforms.map((platform, index) => (
             <div key={index} className="feature-card p-4 text-center">

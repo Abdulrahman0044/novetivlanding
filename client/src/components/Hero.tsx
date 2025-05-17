@@ -19,12 +19,16 @@ export default function Hero() {
           </a>
         </div>
         
+        {/* Dashboard mockup - This should be an image of the dashboard UI */}
         <div className="mt-16 relative max-w-4xl mx-auto">
-          <div className="bg-[#0c1a30] p-8 rounded-xl border border-[#1e3055]">
-            <div className="flex items-center justify-center">
-              <div className="w-12 h-12 bg-[#1e3055] rounded-full flex items-center justify-center">
+          <div className="bg-[#0c1a30] p-8 rounded-xl border border-[#1e3055] overflow-hidden shadow-lg">
+            {/* This would be replaced with your actual dashboard image */}
+            <div className="flex flex-col items-center justify-center h-48 md:h-64">
+              <div className="w-12 h-12 bg-[#1e3055] rounded-full flex items-center justify-center mb-4">
                 <div className="w-6 h-6 bg-[#7c3aed] rounded-full"></div>
               </div>
+              <p className="text-white text-xs md:text-sm text-center">Dashboard preview</p>
+              <p className="text-gray-400 text-xs text-center mt-1">You will replace this with your actual dashboard image</p>
             </div>
           </div>
         </div>
