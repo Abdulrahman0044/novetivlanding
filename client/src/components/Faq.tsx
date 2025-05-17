@@ -22,23 +22,23 @@ export default function Faq() {
   ];
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+    <section className="py-16 section-darker">
+      <div className="container-custom">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold mb-3 text-white">Frequently Asked Questions</h2>
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
             Get quick answers to common questions about Novetiv
           </p>
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full space-y-3">
             {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="mb-4 border border-gray-800 rounded-lg overflow-hidden bg-dark-card">
-                <AccordionTrigger className="px-4 py-4 font-medium hover:no-underline">
+              <AccordionItem key={index} value={`item-${index}`} className="border border-[#1e3055] rounded-lg overflow-hidden bg-[#0c1a30]">
+                <AccordionTrigger className="px-4 py-3 text-sm font-medium hover:no-underline text-white">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="bg-dark-surface px-4 py-4 text-gray-300">
+                <AccordionContent className="bg-[#071020] px-4 py-3 text-gray-400 text-sm">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

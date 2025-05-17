@@ -26,7 +26,7 @@
 }
 
 .dark {
-  --background: 240 10% 3.9%;
+  --background: 222 47% 11%;
   --foreground: 0 0% 98%;
   --muted: 240 3.7% 15.9%;
   --muted-foreground: 240 5% 64.9%;
@@ -36,7 +36,7 @@
   --card-foreground: 0 0% 98%;
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
-  --primary: 267 82% 60%;
+  --primary: 266 100% 64%;
   --primary-foreground: 0 0% 100%;
   --secondary: 240 3.7% 15.9%;
   --secondary-foreground: 0 0% 98%;
@@ -45,20 +45,6 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --ring: 240 4.9% 83.9%;
-  --chart-1: 267 82% 60%;
-  --chart-2: 207 90% 54%;
-  --chart-3: 47 82% 60%;
-  --chart-4: 17 80% 60%;
-  --chart-5: 307 70% 60%;
-  --sidebar-background: 240 10% 3.9%;
-  --sidebar-foreground: 0 0% 98%;
-  --sidebar-primary: 267 82% 60%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 0 0% 98%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 240 4.9% 83.9%;
-  --radius: 0.75rem;
 }
 
 @layer base {
@@ -71,16 +57,49 @@
   }
 }
 
-.dark-surface {
-  @apply bg-[#12141F];
+/* Colors based on the screenshot */
+.dark-navy {
+  @apply bg-[#0b1528];
 }
 
-.dark-card {
-  @apply bg-[#1A1C2A];
+.novetiv-blue {
+  color: #0080ff;
 }
 
+/* Button Styles */
+.btn-primary {
+  @apply bg-[#7c3aed] text-white px-6 py-2 rounded-md hover:bg-[#6d28d9] transition-colors duration-300;
+}
+
+.btn-white {
+  @apply bg-white text-[#7c3aed] px-6 py-2 rounded-md hover:bg-gray-100 transition-colors duration-300;
+}
+
+/* Section Styling */
+.section-dark {
+  @apply bg-[#0b1528];
+}
+
+.section-darker {
+  @apply bg-[#071020];
+}
+
+/* Text Styling */
+.text-blue-highlight {
+  @apply text-[#0077FF];
+}
+
+.heading-large {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+}
+
+.heading-medium {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -89,9 +108,24 @@
 
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted));
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
+}
+
+/* Custom Navigation */
+.nav-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-300;
+}
+
+/* Card Styling */
+.feature-card {
+  @apply bg-[#0c1a30] rounded-lg p-5 border border-[#1e2c48];
+}
+
+/* Responsive containers */
+.container-custom {
+  @apply px-4 mx-auto max-w-7xl;
 }
