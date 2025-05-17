@@ -140,7 +140,26 @@
 
 /* Responsive containers */
 .container-custom {
-  @apply px-4 mx-auto max-w-7xl;
+  @apply px-4 sm:px-6 mx-auto max-w-7xl;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  .heading-large {
+    @apply text-3xl;
+  }
+  
+  .heading-medium {
+    @apply text-xl;
+  }
+  
+  .mobile-p-reduced {
+    @apply py-10 px-3;
+  }
+  
+  .mobile-stack {
+    @apply flex-col space-y-4;
+  }
 }
 
 /* Feature slider styling */

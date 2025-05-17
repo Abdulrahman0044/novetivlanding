@@ -59,27 +59,27 @@ export default function Hero() {
   };
 
   return (
-    <section className="py-16 md:py-20 section-dark relative">
+    <section className="py-12 md:py-20 section-dark relative mobile-p-reduced">
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-12 animate-fadeInUp">
-          <h1 className="heading-large mb-6">
-            Supercharge Your Brand<br />with Smart Content
+        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12 animate-fadeInUp">
+          <h1 className="heading-large mb-4 md:mb-6">
+            Supercharge Your Brand<br className="hidden xs:block" />with Smart Content
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-10">Where AI Meets Social Media Strategy</p>
+          <p className="text-lg md:text-2xl text-gray-300 mb-8 md:mb-10">Where AI Meets Social Media Strategy</p>
           <a 
             href="https://play.google.com/store" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn-primary inline-block py-3 px-8 rounded-full"
+            className="btn-primary inline-block py-2 md:py-3 px-6 md:px-8 rounded-full text-sm md:text-base"
           >
             Try Novetiv for free
           </a>
         </div>
         
         {/* Features slider section - showing one feature at a time */}
-        <div className="mt-20 max-w-3xl mx-auto animate-fadeInUp delay-200">
-          <div className="bg-[#0c1a30] rounded-xl border border-[#1e3055] p-8 overflow-hidden shadow-xl">
-            <h3 className="text-center text-white text-xl font-medium mb-8">Features</h3>
+        <div className="mt-12 md:mt-20 max-w-3xl mx-auto animate-fadeInUp delay-200">
+          <div className="bg-[#0c1a30] rounded-xl border border-[#1e3055] p-4 sm:p-6 md:p-8 overflow-hidden shadow-xl">
+            <h3 className="text-center text-white text-lg md:text-xl font-medium mb-4 md:mb-8">Features</h3>
             
             {/* Single feature display */}
             <div className="relative min-h-[200px] mb-8">
