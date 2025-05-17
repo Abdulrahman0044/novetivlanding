@@ -129,3 +129,68 @@
 .container-custom {
   @apply px-4 mx-auto max-w-7xl;
 }
+
+/* Feature slider styling */
+.feature-slider {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.feature-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.feature-slide {
+  transition: all 0.3s ease;
+}
+
+.feature-slide:hover {
+  transform: translateY(-5px);
+  border-color: #7c3aed;
+}
+
+/* Creative text styling */
+.letter-spacing-wide {
+  letter-spacing: 0.05em;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7c3aed 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Animated elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
