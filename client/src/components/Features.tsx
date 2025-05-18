@@ -5,109 +5,40 @@ export default function Features() {
   const [selectedFeature, setSelectedFeature] = useState<string>("Post Review");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
-  // Mock app screenshots for the right side
   const appScreenshots = [
     {
       title: "Post Review",
       content: (
-        <div className="bg-[#0c1a30] p-4 rounded-lg border border-[#1e3055]">
-          <div className="flex justify-between items-center mb-3">
-            <div className="text-xs text-gray-400">9:41</div>
-            <div className="text-xs text-white font-semibold">Review the following customer post review for me</div>
-          </div>
-          <div className="mb-2">
-            <div className="text-sm text-white font-medium">Jane fosh</div>
-            <p className="text-xs text-gray-300 mt-1">
-              I recently purchased this product and I must say, I'm thoroughly impressed! The quality is top-notch and it exceeded my expectations. 
-              The features are incredibly useful and user-friendly, making it a breeze to integrate into my daily routine. I highly recommend it
-            </p>
-          </div>
-          <div className="mt-4">
-            <div className="text-sm text-white font-medium mb-1">Sentiment Analysis:</div>
-            <p className="text-xs text-gray-300">Overall, the sentiment of the review is positive. The reviewer expresses satisfaction and admiration for the product, indicating a favorable sentiment.</p>
-            
-            <div className="text-sm text-white font-medium mt-3 mb-1">Intent:</div>
-            <p className="text-xs text-gray-300">The intent of the review seems to be to inform others about the positive experience the reviewer had with the product and to recommend it to potential buyers</p>
-          </div>
-          <div className="mt-4 pt-3 border-t border-[#1e3055]">
-            <div className="bg-[#1e293b] rounded-full py-1.5 px-3 text-xs text-gray-300 w-full text-center">
-              Ask me anything...
-            </div>
-          </div>
+        <div className="bg-[#0c1a30] rounded-lg border border-[#1e3055] overflow-hidden">
+          <img 
+            src="/images/Post Review.jpg" 
+            alt="Post Review Interface" 
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       )
     },
     {
       title: "Post Generation",
       content: (
-        <div className="bg-[#0c1a30] p-4 rounded-lg border border-[#1e3055]">
-          <div className="flex justify-between items-center mb-3">
-            <div className="text-xs text-gray-400">9:41</div>
-            <div className="text-xs text-white font-semibold">Generate post content for product launch</div>
-          </div>
-          <div className="mb-4">
-            <div className="text-sm text-white font-medium">Content Options</div>
-            <div className="mt-2 space-y-2">
-              <div className="p-2 border border-[#1e3055] rounded-md">
-                <p className="text-xs text-gray-300">
-                  🎉 Exciting news! Our new product is finally here! Designed with you in mind, it combines innovative features with elegant design. Try it today and experience the difference! #NewLaunch #Innovation
-                </p>
-              </div>
-              <div className="p-2 border border-[#1e3055] rounded-md">
-                <p className="text-xs text-gray-300">
-                  Introducing our latest creation - the result of months of research and customer feedback. We've addressed your needs and created something truly special. Available now! #ProductLaunch
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-between text-xs">
-            <button className="text-blue-highlight">Regenerate</button>
-            <button className="text-blue-highlight">Use this content</button>
-          </div>
-          <div className="mt-4 pt-3 border-t border-[#1e3055]">
-            <div className="bg-[#1e293b] rounded-full py-1.5 px-3 text-xs text-gray-300 w-full text-center">
-              Ask me anything...
-            </div>
-          </div>
+        <div className="bg-[#0c1a30] rounded-lg border border-[#1e3055] overflow-hidden">
+          <img 
+            src="/images/Post Generation.jpg" 
+            alt="Post Generation Interface" 
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       )
     },
     {
       title: "Post Analysis",
       content: (
-        <div className="bg-[#0c1a30] p-4 rounded-lg border border-[#1e3055]">
-          <div className="flex justify-between items-center mb-3">
-            <div className="text-xs text-gray-400">9:41</div>
-            <div className="text-xs text-white font-semibold">Post performance analytics</div>
-          </div>
-          <div className="mb-3">
-            <div className="text-sm text-white font-medium">Engagement Overview</div>
-            <div className="grid grid-cols-3 gap-2 mt-2">
-              <div className="p-2 bg-[#1e293b] rounded-md text-center">
-                <div className="text-blue-highlight text-sm font-bold">1.2k</div>
-                <div className="text-xs text-gray-400">Likes</div>
-              </div>
-              <div className="p-2 bg-[#1e293b] rounded-md text-center">
-                <div className="text-blue-highlight text-sm font-bold">468</div>
-                <div className="text-xs text-gray-400">Shares</div>
-              </div>
-              <div className="p-2 bg-[#1e293b] rounded-md text-center">
-                <div className="text-blue-highlight text-sm font-bold">89</div>
-                <div className="text-xs text-gray-400">Comments</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-sm text-white font-medium mb-2">Audience Insights</div>
-            <div className="h-20 bg-[#1e293b] rounded-md flex items-center justify-center">
-              <div className="text-xs text-gray-400">Demographic chart visualization</div>
-            </div>
-          </div>
-          <div className="mt-4 pt-3 border-t border-[#1e3055]">
-            <div className="bg-[#1e293b] rounded-full py-1.5 px-3 text-xs text-gray-300 w-full text-center">
-              Ask me anything...
-            </div>
-          </div>
+        <div className="bg-[#0c1a30] rounded-lg border border-[#1e3055] overflow-hidden">
+          <img 
+            src="/images/Post Analytics.jpg" 
+            alt="Post Analytics Interface" 
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       )
     }
@@ -158,7 +89,7 @@ export default function Features() {
     <section className="py-10 md:py-16 section-dark mobile-p-reduced" id="features">
       <div className="container-custom">
         <div className="text-left mb-8 md:mb-10 px-2">
-          <h2 className="text-lg md:text-xl font-bold text-blue-highlight mb-2">Discover</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-0">Discover</h2>
           <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Novetiv's Features</h3>
           <p className="text-gray-400 text-xs md:text-sm max-w-2xl px-0">
             Unlock a suite of smart tools that make content creation effortless and brand engagement meaningful.
@@ -195,7 +126,7 @@ export default function Features() {
           <div className="md:w-1/2 lg:w-3/5">
             <div className="bg-[#0a1223] rounded-lg p-2 md:p-3 border border-[#1e3055] relative">
               <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#1e293b] rounded-full"></div>
-              <div className="pt-6 max-w-xs mx-auto">
+              <div className="pt-6 max-w-[280px] mx-auto">
                 {appScreenshots[currentImageIndex].content}
               </div>
             </div>
