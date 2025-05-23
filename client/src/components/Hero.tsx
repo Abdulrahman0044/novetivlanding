@@ -70,9 +70,15 @@ export default function Hero() {
             href="https://play.google.com/store" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn-primary inline-block py-2 md:py-3 px-6 md:px-8 rounded-full text-sm md:text-base"
+             className="btn-primary bg-gradient-btn inline-block py-2 md:py-3 px-6 md:px-8 rounded-full text-sm md:text-base transition-all duration-[900ms] ease-in-out hover:text-black hover:bg-gradient-btn-white"
+
           >
-            Try Novetiv for free
+            <span>Try Novetiv for free</span>
+             {/* <span className="opacity-0 text-black transform translate-x-[-8px] hover:opacity-100 hover:translate-x-0 transition-all duration-300">;
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">;
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />;
+              </svg>;
+  </span>; */}
           </a>
         </div>
         

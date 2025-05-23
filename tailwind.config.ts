@@ -61,6 +61,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        //  gradient btn
+        btnStart: '#0057FF',
+        btnEnd: '#9B0AB1',
+      },
+         backgroundImage: {
+          // gradient btn background
+        'gradient-btn-white': 'linear-gradient(to bottom, #ffffff, #ffffff)',
+        'gradient-btn': 'linear-gradient(to bottom, #0057FF, #9B0AB1)',
       },
       keyframes: {
         "accordion-down": {

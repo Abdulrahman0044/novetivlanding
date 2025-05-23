@@ -45,9 +45,10 @@ export default function Header() {
             href="https://play.google.com/store"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-block btn-primary text-xs lg:text-sm font-medium rounded-full py-2 px-4"
+            className="hidden md:inline-block lg:py-2 px-4"
           >
-            Try Novetiv for free
+            <img className="hover:bg-gradient-btn"
+            src="../../public/images/novetiv_icon.png" alt="" width={24} height={24} />
           </a>
 
           {/* Mobile Menu Button */}
