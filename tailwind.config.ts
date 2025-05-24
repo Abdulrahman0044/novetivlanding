@@ -70,6 +70,10 @@ export default {
         'gradient-btn-white': 'linear-gradient(to bottom, #ffffff, #ffffff)',
         'gradient-btn': 'linear-gradient(to bottom, #0057FF, #9B0AB1)',
       },
+      borderColor: {
+        'gradient-border': '#9B0AB1',
+
+      },
       keyframes: {
         "accordion-down": {
           from: {
