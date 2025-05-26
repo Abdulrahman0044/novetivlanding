@@ -91,12 +91,12 @@ export default function Hero() {
                     index === activeSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
                   }`}
                 >
-                  <div className="px-6 py-1">
+                  <div className="px-3 py-1 md:px-6">
                     <div className="flex items-top gap-5">
                       
-                      <div className="bg-black p-8 rounded-sm flex items-center justify-center flex-shrink-0 w-60 h-120 relative overflow-hidden">
+                      <div className="bg-black p-5 w-20 rounded-sm flex items-center justify-center flex-shrink-0 relative overflow-hidden md:p-8 md:w-60">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-500/20 to-transparent opacity-50"></div>
-                        <div className="w-12 h-12 flex items-center justify-center text-[#7c3aed] relative z-10 transition-all duration-300 hover:text-[#9361ff] group">
+                        <div className="w-8 h-8 flex items-center justify-center text-[#7c3aed] relative z-10 transition-all duration-300 hover:text-[#9361ff] group md:w-12 h-12">
                           {feature.icon}
                           <div className="absolute inset-0 bg-gradient-to-r from-blue-400/30 to-purple-500/30 blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>

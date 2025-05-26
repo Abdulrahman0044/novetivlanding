@@ -105,10 +105,10 @@ export default function Features() {
 
             {/* Left side - Header */}
             <div className="text-left mb-8  md:mb-10">
-              <h2 className="text-xl md:text-4xl font-bold text-white mb-1 md:mb-0">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-1 md:mb-0">
                 Discover
               </h2>
-              <h3 className="text-xl md:text-4xl font-bold text-white mb-3 md:mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
                 Novetiv's Features
               </h3>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl px-0">
@@ -157,7 +157,7 @@ export default function Features() {
 
           {/* Right side - Mobile app screenshot */}
           <div className="md:w-1/2 lg:w-3/5">
-            <div className=" mt-20 rounded-lg p-2 md:p-3  relative">
+            <div className=" mt-10 rounded-lg p-2 md:p-3  relative">
               <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#1e293b] rounded-full"></div>
               <div className="pt-6 max-w-[280px] mx-auto">
                 {appScreenshots[currentImageIndex].content}

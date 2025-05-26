@@ -28,7 +28,7 @@ export default function Faq() {
   return (
     <section className="py-16 bg-bgPrimary">
       <div className="container-custom">
-        <div className="flex flex-col items-start mx-0 md:flex-row items-center md:mx-20 mt-20">
+        <div className="flex flex-col items-start mt-0 mx-5  md:flex-row md:items-center md:mx-20 mt-20">
           <div className="md:w-2/3 mb-8 md:mb-0">
             <h2 className="text-4xl font-bold mb-3  text-white">Frequently Asked<br/>Questions</h2>
             <p className="text-gray-400 text-sm max-w-sm">
