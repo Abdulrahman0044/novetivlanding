@@ -64,6 +64,7 @@ export default {
         //  gradient btn
         btnStart: '#0057FF',
         btnEnd: '#9B0AB1',
+        bgPrimary: "#0D1027"
       },
          backgroundImage: {
           // gradient btn background
@@ -71,7 +72,7 @@ export default {
         'gradient-btn': 'linear-gradient(to bottom, #0057FF, #9B0AB1)',
       },
       borderColor: {
-        'gradient-border': '#9B0AB1',
+        'gradient-border': '#dd00ff',
 
       },
       keyframes: {

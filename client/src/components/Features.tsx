@@ -96,7 +96,7 @@ export default function Features() {
 
   return (
     <section
-      className="py-10 md:py-16 section-dark mobile-p-reduced"
+      className="py-10 md:py-16 bg-bgPrimary mobile-p-reduced"
       id="features"
     >
       <div className="container-custom">
@@ -104,7 +104,7 @@ export default function Features() {
           <div className="md:w-1/2 lg:w-2/5">
 
             {/* Left side - Header */}
-            <div className="text-left mb-8 px-0 md:mb-10">
+            <div className="text-left mb-8  md:mb-10">
               <h2 className="text-xl md:text-4xl font-bold text-white mb-1 md:mb-0">
                 Discover
               </h2>

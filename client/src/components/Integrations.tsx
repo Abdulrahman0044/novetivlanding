@@ -14,13 +14,13 @@ export default function Integrations() {
     },
     {
       name: "LinkedIn",
-      icon: "fab fa-linkedin",
+      icon: "fab fa-linkedin-in",
       color: "text-blue-700",
       description: "Automate, gain insights, and optimize your LinkedIn content effortlessly."
     },
     {
       name: "Twitter (X)",
-      icon: "fa-solid fa-x",
+      icon: "fab fa-x",
       color: "text-black",
       description: "Automate, gain insights, and optimize your Twitter content effortlessly."
     }
@@ -29,7 +29,7 @@ export default function Integrations() {
   return (
     <section className="py-10 md:py-16 bg-[#FAFBFF] mobile-p-reduced" id="integration">
       <div className="container-custom">
-        <div className="flex flex-col items-center md:flex-row gap-8 md:gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-col items-start md:flex-row items-center gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* Left side - Text content */}
           <div className="md:w-1/2 px-2">
             <div className="text-left">
@@ -59,7 +59,7 @@ export default function Integrations() {
               {platforms.map((platform, index) => (
                 <div 
                   key={index} 
-                  className="bg-white rounded-lg px-4 py-10 hover:shadow-md transition-shadow duration-300 flex flex-col h-full"
+                  className="bg-white rounded-lg px-4 py-10 hover:border border-blue-200 transition-all duration-300 flex flex-col h-full"
                 >
                   <div className="flex flex-col items-start h-full">
                     <div className="w-12 h-12 flex items-center justify-center mb-3 ">
