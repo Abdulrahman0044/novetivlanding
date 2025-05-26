@@ -15,7 +15,7 @@ export default function Hero() {
     },
     {
       icon: (
-        <img src="../public/images/ai.png" alt="" width={50} height={50}/>
+        <img src="../public/images/analysis.png" alt="" width={50} height={50}/>
 
       ),
       title: "Sentiment Analysis of Customer feedback",
@@ -23,7 +23,7 @@ export default function Hero() {
     },
     {
       icon: (
-        <img src="../public/images/ai.png" alt="" width={50} height={50}/>
+        <img src="../public/images/schedule.png" alt="" width={50} height={50}/>
 
       ),
       title: "Multi-platform Social Scheduling",
@@ -31,7 +31,7 @@ export default function Hero() {
     },
     {
       icon: (
-        <img src="../public/images/ai.png" alt="" width={50} height={50}/>
+        <img src="../public/images/response.png" alt="" width={50} height={50}/>
 
       ),
       title: "Smart response suggestions",
