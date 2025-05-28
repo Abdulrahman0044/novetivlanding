@@ -159,7 +159,7 @@ export default function Features() {
           <div className="md:w-1/2 lg:w-3/5">
             <div className=" mt-10 rounded-lg p-2 md:p-3  relative">
               <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#1e293b] rounded-full"></div>
-              <div className="pt-6 max-w-[280px] mx-auto">
+              <div className="pt-6 max-w-[230px] mx-auto">
                 {appScreenshots[currentImageIndex].content}
               </div>
             </div>

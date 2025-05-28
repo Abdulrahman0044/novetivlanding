@@ -11,6 +11,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        btnStart: '#0057FF',
+        btnEnd: '#9B0AB1',
+        bgPrimary: "#0D1027",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -61,15 +64,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        //  gradient btn
-        btnStart: '#0057FF',
-        btnEnd: '#9B0AB1',
-        bgPrimary: "#0D1027"
       },
          backgroundImage: {
           // gradient btn background
         'gradient-btn-white': 'linear-gradient(to bottom, #ffffff, #ffffff)',
         'gradient-btn': 'linear-gradient(to bottom, #0057FF, #9B0AB1)',
+        'hero-pattern': 'url(public/images/bg.png)'
       },
       borderColor: {
         'gradient-border': '#dd00ff',

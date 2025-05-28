@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 export default function Header() {
@@ -47,8 +43,14 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden md:inline-block lg:py-2 px-4"
           >
-            <img className="hover:bg-gradient-btn"
-            src="../../public/images/novetiv_icon.png" alt="" width={24} height={24} />
+            <div className="p-2 rounded-full hover:bg-gradient-btn">
+              <img
+                src="../../public/images/novetiv_icon.png"
+                alt=""
+                width={24}
+                height={24}
+              />
+            </div>
           </a>
 
           {/* Mobile Menu Button */}
@@ -58,7 +60,10 @@ export default function Header() {
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="dark-navy w-[80%] max-w-[300px]">
+            <SheetContent
+              side="right"
+              className="dark-navy w-[80%] max-w-[300px]"
+            >
               <nav className="flex flex-col space-y-5 mt-8">
                 {navigationLinks.map((link, index) => (
                   <a

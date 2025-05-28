@@ -1,6 +1,6 @@
 export default function Introduction() {
   return (
-    <section className="py-8 md:py-10 bg-bgPrimary">
+    <section className="py-8 md:pt-40 pb-0">
       <div className="container-custom">
         <div className="mx-auto">
           <div className="text-center mb-6 md:mb-10">
