@@ -114,13 +114,13 @@ export default function Hero() {
           </div>
 
           {/* Dot indicators/buttons */}
-          <div className="flex justify-center space-x-1.5 mt-3">
+          <div className="flex justify-center space-x-1.5 mt-10">
             {[...Array(totalSlides)].map((_, index) => (
               <button
                 key={index}
                 onClick={() => handleIndicatorClick(index)}
-                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                  activeSlide === index ? 'bg-[#7c3aed] w-3' : 'bg-[#1e3055]'
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  activeSlide === index ? 'bg-gradient-btn w-5' : 'bg-[#1e3055]'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
