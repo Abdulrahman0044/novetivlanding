@@ -121,7 +121,7 @@ export default function Testimonials() {
                 <button
                   key={index}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    activeSlide === index ? 'bg-[#7c3aed] w-4' : 'bg-gray-300'
+                    activeSlide === index ? 'bg-gradient-btn w-5' : 'bg-gray-300'
                   }`}
                   onClick={() => setActiveSlide(index)}
                   aria-label={`View testimonials page ${index + 1}`}
