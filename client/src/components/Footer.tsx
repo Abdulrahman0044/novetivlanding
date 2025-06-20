@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="pt-8 md:pt-12 pb-4 section-darker mobile-p-reduced" id="about">
+    <footer className="pt-8 md:pt-12 pb-4 bg-bgPrimary mobile-p-reduced" id="about">
       <div className="container-custom">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 mb-8 md:mb-10">
           <div className="col-span-2 sm:col-span-2 md:col-span-2 mb-2 md:mb-0">

@@ -1,6 +1,6 @@
 export default function Dashboard() {
   return (
-    <section className="py-12 section-darker">
+    <section className="py-20 px-10 bg-[#ffffff]">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           <div className="bg-[#0c1a30] rounded-lg border border-[#1e3055] overflow-hidden shadow-lg">

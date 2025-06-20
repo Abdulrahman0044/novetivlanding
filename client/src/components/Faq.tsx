@@ -26,17 +26,17 @@ export default function Faq() {
   ];
 
   return (
-    <section className="py-16 section-darker">
+    <section className="py-16 bg-bgPrimary">
       <div className="container-custom">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/3 mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-3 text-white">Frequently Asked<br />Questions</h2>
+        <div className="flex flex-col items-start mt-0 mx-5  md:flex-row md:items-center md:mx-20 mt-20">
+          <div className="md:w-2/3 mb-8 md:mb-0">
+            <h2 className="text-4xl font-bold mb-3  text-white">Frequently Asked<br/>Questions</h2>
             <p className="text-gray-400 text-sm max-w-sm">
               Don't just take our word hear what people are saying
             </p>
           </div>
-          
-          <div className="md:w-2/3">
+          {/* scr size = sm -> md -> lg */}
+          <div className="ml-0 w-full  md:ml-60">
             <Accordion type="single" collapsible className="w-full space-y-3">
               {faqItems.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border border-[#1e3055] rounded-lg overflow-hidden bg-[#0c1a30]">
